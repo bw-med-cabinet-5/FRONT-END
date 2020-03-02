@@ -1,4 +1,4 @@
 # Front-end-UI
-- Dependencies
+* Dependencies
 yarn add 
 
