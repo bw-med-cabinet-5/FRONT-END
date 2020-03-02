@@ -1,6 +1,7 @@
 # Front-end-UI
 ## Dependencies
-```- yarn add 
+```
+- yarn add 
  [ ] axios
  [ ] history
  [ ] react-router-dom
