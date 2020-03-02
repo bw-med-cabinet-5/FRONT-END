@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# Front-end
+### Dependencies
+* yarn add 
+```
+ [ ] axios
+ [ ] history
+ [ ] react-router-dom
+ [ ] react-loader-spinner
+ [ ] react-redux
+ [ ] redux
+ [ ] redux-thunk
+ [ ] thunk
+ [ ] styled-components
+ [ ] now
+ 
+```
+>>>>>>> 5ebd41c4751c176ff9ae64987101656b7c06df52
