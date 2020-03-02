@@ -1,3 +1,15 @@
 # Front-end-UI
-* yarn add 
+## Dependencies
+ - yarn add 
+ [ ] axios
+ [ ] history
+ [ ] react-router-dom
+ [ ] react-loader-spinner
+ [ ] react-redux
+ [ ] redux
+ [ ] redux-thunk
+ [ ] thunk
+ [ ] styled-components
+ [ ] now
+ 
 
