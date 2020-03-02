@@ -1,6 +1,5 @@
 # Front-end
 ### Dependencies
-```
 -yarn add 
  [ ] axios
  [ ] history
