@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 
-
-##### `yarn add`
+### `yarn add`
+```
  [ ] axios
  [ ] history
  [ ] react-router-dom
@@ -12,6 +11,7 @@
  [ ] thunk
  [ ] styled-components
  [ ] now
+ ```
 
 In the project directory, you can run:
 
@@ -20,12 +20,3 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-
-
-=======
-
-
-
-
-
->>>>>>> 5ebd41c4751c176ff9ae64987101656b7c06df52
