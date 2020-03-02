@@ -1,4 +1,4 @@
-# Front-end-UI
+# Front-end
 ### Dependencies
 ```
 -yarn add 
