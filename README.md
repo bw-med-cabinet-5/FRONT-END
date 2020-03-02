@@ -1,7 +1,7 @@
 # Front-end-UI
 ## Dependencies
  - yarn add 
- [ ] axios
+``` [ ] axios
  [ ] history
  [ ] react-router-dom
  [ ] react-loader-spinner
@@ -12,4 +12,4 @@
  [ ] styled-components
  [ ] now
  
-
+```
