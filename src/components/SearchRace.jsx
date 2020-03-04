@@ -11,6 +11,10 @@ const SearchRace = () =>{
 
     const [data, setData]=useState([]);
     const [query, setQuery]=useState('');
+    const handleSubmit =(e) => {
+      e.preventDefault();
+      console.log('data', query)
+  }
     
     useEffect(() => {
         const RACE= `${query}`;
@@ -31,18 +35,13 @@ const SearchRace = () =>{
         
         <div className="Strains">
           
-        <form className="search">
-          <NewSearch
-            type="text"
-            onChange={handleInputChange}
-            value={query}
-            name="name"
-            tabIndex="0"
-            className="search-name"
-            placeholder="search by Race"
-            autoComplete="off"
-          />
-        </form>
+          <form onSubmit={handleSubmit}>
+            <label>Search: </label>
+            <NewSearch type='text' value={query} required onChange={handleInputChange} placeholder='search type'/>
+            <input type='submit' value='GO!'/>
+
+
+        </form> 
         
     
       <div className="strains">

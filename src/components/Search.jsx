@@ -5,7 +5,7 @@ import SearchRace from './SearchRace';
 import SearchAilment from './SearchAilment';
 import { Dropdown} from 'react-bootstrap';
 import { Route, Switch} from 'react-router-dom';
-import LearnMore from './LearnMore';
+
 
 
 const Search = () =>{
@@ -37,7 +37,7 @@ const Search = () =>{
         <Route path='/name' component={SearchName}/>
         <Route path='/race' component={SearchRace}/>
         <Route path='/ailment' component={SearchAilment}/>
-        <Route path='/learnMore' component={LearnMore}/>
+        
         </Switch>
          
          

@@ -3,6 +3,7 @@ import axios from 'axios';
 import Searchcards from './Searchcards';
 import styled from 'styled-components';
 
+
 const NewSearch = styled.input`
 margin-top: .25rem;
 `
@@ -10,6 +11,10 @@ const SearchName = () =>{
 
     const [data, setData]=useState([]);
     const [query, setQuery]=useState('');
+    const handleSubmit =(e) => {
+      e.preventDefault();
+      console.log('data', query)
+  }
     
      useEffect(() => {
       const NAME= `${query}`;
@@ -30,25 +35,18 @@ const SearchName = () =>{
         
         <div className="Strains">
           
-        <form className="search">
-          <NewSearch
-            type="text"
-            onChange={handleInputChange}
-            value={query}
-            name="name"
-            tabIndex="0"
-            className="search-name"
-            placeholder="search by name"
-            autoComplete="off"
-          />
-        </form>
-        
-    
+          <form onSubmit={handleSubmit}>
+            <label>Search: </label>
+            <NewSearch type='text' value={query} required onChange={handleInputChange} placeholder='search by name'/>
+            <input type='submit' value='GO!'/>
+
+
+        </form> 
       <div className="strains">
        { data.map(data => {
           return (
             <div className='strain-list' key={data.id}>
-              <Searchcards name={data.name} race={data.race} effect={data.effect} desc={data.desc}/>
+              <Searchcards name={data.name} race={data.race}  desc={data.desc}/>
             
             </div>
           )
