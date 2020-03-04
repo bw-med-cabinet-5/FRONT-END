@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Searchcards from './Searchcards';
-
+import LearnMore from './LearnMore';
 const SearchName = () =>{
 
     const [data, setData]=useState([]);
@@ -45,6 +45,7 @@ const SearchName = () =>{
           return (
             <div className='strain-list' key={data.id}>
               <Searchcards name={data.name} race={data.race} effect={data.effect} desc={data.desc}/>
+              <LearnMore name={data.name} race={data.race} effect={data.effect} desc={data.desc}/>
             </div>
           )
         })} 

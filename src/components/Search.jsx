@@ -33,14 +33,12 @@ const Search = () =>{
        
      
       
-          <Switch>
+        <Switch>
         <Route path='/name' component={SearchName}/>
         <Route path='/race' component={SearchRace}/>
         <Route path='/ailment' component={SearchAilment}/>
         <Route path='/learnMore' component={LearnMore}/>
-        
-
-      </Switch>
+        </Switch>
          
          
        </div>

@@ -1,36 +1,30 @@
-import React, {useState} from 'react';
-import {Modal, Button} from 'reactstrap';
+import React from 'react';
+import {
+    Card, CardText, CardBody,
+    CardTitle, CardSubtitle, 
+  } from 'reactstrap';
 
-
-function LearnMore() {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
+  export class Learn extends React.Component{
+    constructor(props){
+        super();
+    } 
+    
+  }
+   const LearnMore = (props) => {
+       console.log('props', props)
     return (
-    <div>
-        
-      
-        <Button variant="primary" onClick={handleShow}>
-          Learn More Here!
-        </Button>
-  
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Strain:  </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Description: </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
+      <div>
+        <Card>
+          
+          <CardBody>
+            <CardTitle>Strain: {props.name}</CardTitle>
+            <CardSubtitle>Race: {props.name}</CardSubtitle>
+            <CardText>Description: {props.desc}</CardText>
+            
+          </CardBody>
+        </Card>
       </div>
     );
-  }
-export default LearnMore;
+  };
+  
+  export default LearnMore;

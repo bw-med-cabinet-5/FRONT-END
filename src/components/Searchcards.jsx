@@ -8,7 +8,7 @@ import {
   
  
 
- export const Searchcards = (props) => {
+ const Searchcards = (props) => {
     
     return (
      
@@ -18,7 +18,7 @@ import {
             <CardTitle>Strain: {props.name}</CardTitle>
             <CardSubtitle>Type: {props.race}</CardSubtitle>
             <CardText>Ailment: {props.effect}</CardText>
-    <Link to='/learnMore'><Button onClick={render(<LearnMore name={data.name} race={data.race} desc={data.desc}/>)}> Learn More</Button></Link>
+    <Link to='/learnMore'><Button > Learn More</Button></Link>
           </CardBody>
         </Card>
     );
