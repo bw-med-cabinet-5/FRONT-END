@@ -1,7 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Searchcards from './Searchcards';
-import LearnMore from './LearnMore';
+import styled from 'styled-components';
+
+const NewSearch = styled.input`
+margin-top: .25rem;
+`
 
 const SearchAilment = () =>{
 
@@ -29,7 +33,7 @@ const SearchAilment = () =>{
         <div className="Strains">
           
         <form className="search">
-          <input
+          <NewSearch
             type="text"
             onChange={handleInputChange}
             value={query}
@@ -47,7 +51,7 @@ const SearchAilment = () =>{
           return (
             <div className='strain-list' key={data.id}>
               <Searchcards name={data.name} race={data.race} effect={data.effect} desc={data.desc}/>
-              <LearnMore name={data.name} race={data.race} effect={data.effect} desc={data.desc}/>
+              {/* <LearnMore name={data.name} race={data.race} effect={data.effect} desc={data.desc}/> */}
             </div>
           )
         })} 

@@ -18,8 +18,9 @@ import {
           
           <CardBody>
             <CardTitle>Strain: {props.name}</CardTitle>
-            <CardSubtitle>Race: {props.name}</CardSubtitle>
+            <CardSubtitle>Race: {props.race}</CardSubtitle>
             <CardText>Description: {props.desc}</CardText>
+            
             
           </CardBody>
         </Card>
