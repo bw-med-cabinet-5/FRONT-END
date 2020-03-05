@@ -1,5 +1,5 @@
 ## Built and Compiled:
-- create-react-ap
+- create-react-app
 - axios
 - redux 
 - styled-components
@@ -10,7 +10,7 @@
 
 ### terminal:
 #### Fork or Clone
-* If Clone
+ If Clone
 - mkdir {name new folder directory}
 - cd {new new directory}
 - git clone {repo http path}
