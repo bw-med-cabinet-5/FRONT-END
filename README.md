@@ -1,11 +1,11 @@
-### Built and Compiled:
+## Built and Compiled:
 - create-react-ap
 - axios
 - redux 
 - styled-components
 
 ### Local Source
-# Fork or Clone
+#### Fork or Clone
 - If Clone
 # terminal:
 - mkdir {name new folder directory}
