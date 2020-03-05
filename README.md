@@ -7,13 +7,11 @@
 ### Local Source
 #### Fork or Clone
 - If Clone
-# terminal:
+## terminal:
 - mkdir {name new folder directory}
 - cd {new new directory}
 - git clone {repo http path}
 
-### `npm install:`
-```
  [ ] axios
  [ ] history
  [ ] react-router-dom
@@ -25,7 +23,7 @@
  [ ] thunk
  [ ] styled-components
  [ ] now
- ```
+
 
 In the project directory, you can run:
 
