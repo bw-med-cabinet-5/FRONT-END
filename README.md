@@ -4,23 +4,26 @@
 - redux 
 - styled-components
 
-### Local Source
+
+
+## Local Source
+
+### terminal:
 #### Fork or Clone
-- If Clone
-## terminal:
+* If Clone
 - mkdir {name new folder directory}
 - cd {new new directory}
 - git clone {repo http path}
 
- [ ] axios
- [ ] history
- [ ] react-router-dom
- [ ] react-loader-spinner
- [ ] react-redux
- [ ] redux
- [ ] redux-thunk
- [ ] redux-logger
- [ ] thunk
+ [] axios
+ [] history
+ [] react-router-dom
+ [] react-loader-spinner
+ [] react-redux
+ [] redux
+ [] redux-thunk
+ [] redux-logger
+ [] thunk
  [ ] styled-components
  [ ] now
 
