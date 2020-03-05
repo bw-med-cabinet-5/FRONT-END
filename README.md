@@ -15,17 +15,17 @@
 - cd {new new directory}
 - git clone {repo http path}
 
- [] axios
- [] history
- [] react-router-dom
- [] react-loader-spinner
- [] react-redux
- [] redux
- [] redux-thunk
- [] redux-logger
- [] thunk
- [ ] styled-components
- [ ] now
+ - [ ] axios
+ - [ ] history
+ - [ ] react-router-dom
+ - [ ] react-loader-spinner
+ - [ ] react-redux
+ - [ ] redux
+ - [ ] redux-thunk
+ - [ ] redux-logger
+ - [ ] thunk
+ - [ ] styled-components
+ - [ ] now
 
 
 In the project directory, you can run:
