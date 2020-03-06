@@ -38,9 +38,11 @@ In the project directory, you can run:
 - cd cloned file directory
 - cd server
 - npm start
-- server will be open [http://localhost:5000] <br/>
+- server will be open [http://localhost:5000](http://localhost:5000) <br/>
+- cd.. (back out of directory)
+- npm start (start main application)
 
-NOTE: This must be initiated to use CRUD functionality 
+NOTE: Server directory must be initiated to use CRUD functionality in app
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
