@@ -2,20 +2,16 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import {logoutUser} from '../actions/userActions'
-import '../assets/header.css'
-
 const Header = (props) => {
    
     return (
         <div>
             <h1 className='header-title'>Medical Mary</h1>
       
-                <nav>
-                    <NavLink activeClassName='nav-links--active' className='nav-link' to='/' >Login</NavLink>
+                <nav className='header-nav'>
                     <NavLink activeClassName='nav-links--active' className='nav-link' to='/users' >Home</NavLink>
-                    <NavLink activeClassName='nav-links--active'  className='nav-link'  to='/strain' >Strains</NavLink>
-                    <NavLink activeClassName='nav-links--active'  className='nav-link'  to='/profile' >Profile</NavLink>
-                    <NavLink activeClassName='nav-links--active'  className='nav-link'  to='/Card' >Card</NavLink>
+                    <NavLink activeClassName='nav-links--active'  className='nav-link'  to='/profile' >Strain List</NavLink>
+                    <NavLink activeClassName='nav-links--active'  className='nav-link'  to='/search' >Search</NavLink>
                 </nav>
              
         </div>

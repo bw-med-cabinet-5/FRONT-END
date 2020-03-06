@@ -18,7 +18,6 @@
 ### `npm install`
 
  - [ ] axios
- - [ ] history
  - [ ] react-router-dom
  - [ ] react-loader-spinner
  - [ ] react-redux
@@ -27,6 +26,8 @@
  - [ ] redux-logger
  - [ ] thunk
  - [ ] styled-components
+ - [ ] bootstrap
+ - [ ] reactstrap
  - [ ] now
 
 

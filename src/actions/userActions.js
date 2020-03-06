@@ -39,12 +39,12 @@ export const registerUser = (newUser, history) => dispatch => {
   axios
     .post("https://med-cabinet-production.herokuapp.com/api/users/register", newUser)
     .then(res => {
-;
       dispatch({ type: REGISTER_SUCCESS, payload: res.data });
+      localStorage.setItem('token', res.data.token)
       history.push("/user");
     })
     .catch(err => {
-      dispatch({ type: REGISTER_FAILURE, payload:err.res });
+      dispatch({ type: REGISTER_FAILURE, payload:err.data });
     });
 };
 

@@ -8,11 +8,11 @@ import Login from './components/Login'
 import Register from './components/Register'
 import HomePage from './components/HomePage'
 import PrivateRoute from './utils/PrivateRoute';
-import StrainSection from './components/StrainSection';
-import StrainList from './components/StrainList';
-import StrainCard from './components/StrainCard';
-import UserProfile from './components/UserProfile';
-import AddStrain from './components/AddStrain';
+import ProfileList from './profile/ProfileList';
+import Search from './components/Search';
+import SearchAilment from './search/SearchAilment';
+import SearchName from './search/SearchName';
+import SearchRace from './search/SearchRace';
 
 function App() {
 
@@ -23,12 +23,14 @@ function App() {
       <Route exact path ='/' component={Login}/>
       <Route path = '/register' component={Register}/>
       <PrivateRoute exact path='/users' component={HomePage}/>
-      <PrivateRoute exact path='/strain' component={StrainSection}/>
-      <PrivateRoute exact path = '/card' component={StrainCard}/>
-      <PrivateRoute exact path ='/profile' component={UserProfile}/>
+      <PrivateRoute exact path='/profile' component={ProfileList}/>
+      <PrivateRoute exact path='/search' component={Search}/>
+      <Switch>
+      <PrivateRoute exact path='/ailments' component={SearchAilment}/>
+      <PrivateRoute exact path='/name' component={SearchName}/>
+      <PrivateRoute exact path='/race' component={SearchRace}/>
+      </Switch>
       <Footer/>
-
-
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {registerUser} from '../actions/userActions'
 import {connect} from 'react-redux'
-import {userHistory} from 'react-router-dom'
  import Loader from 'react-loader-spinner'
  import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
@@ -17,9 +16,10 @@ function Register(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+           console.log(newUser, props.history)
         props.registerUser(newUser, props.history)
         props.toggleRegister()
-        console.log(newUser, props.history)
+     
     }
 
     const handleChange = (e) => {

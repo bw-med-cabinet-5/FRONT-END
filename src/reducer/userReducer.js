@@ -34,10 +34,10 @@ const initialState = {
             last_name:'',
             email: '',
             cabinet:[],
-            strain_id: null,
+            strain_id: '',
             strain_name:'',
             strain_type:'',
-            strain_rating:null,
+            strain_rating:'',
             strain_description: '',
             strain_effects:'',
             strain_flavors:'',
@@ -51,7 +51,6 @@ const initialState = {
             isDeletingStrain:false,
             isGettingStrain:false,
             isEditingStrain:false,
-            strain: null,
             isGettingStrain: false,
     }
         
@@ -63,24 +62,28 @@ const userReducer =  (state = initialState, action) => {
     console.log(state, action)
     switch(action.type) {
         case    REGISTER_REQUEST:
+            console.log(state, action)
             return { 
                 ...state,
-                isRegistered: false,
+                isRegistered:false,
+                isRegistering:true,
                 error:'Reg req'
             };
 //REGISTER START
 
         case REGISTER_SUCCESS:
-            // console.log(state, action)
+            console.log(state, action)
             return {
                 ...state,
                 isLoggedIn: false,
-                isRegistered: true,
+                isRegistered:true,
+                isRegistering:false,
                 user_id: action.payload.user.user_id,
                 first_name: action.payload.user.first_name, 
                 last_name: action.payload.user.last_name, 
                 email: action.payload.user.email,
-                error: 'res success'
+                cabinet:[action.payload.cabinet],
+                error: 'REGISTER SUCCESSFUL'
             };
     
         case REGISTER_FAILURE:
