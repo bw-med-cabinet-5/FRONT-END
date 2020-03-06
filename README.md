@@ -33,12 +33,14 @@
 
 In the project directory, you can run:
 
-### Local Server delployment
+### Local Server deployment
 
 - cd cloned file directory
-- cd server
+- cd server  (into the main server directory where the server.js file is located)<br/>
+# In terminal run
+- npm install
 - npm start
-- server will be open [http://localhost:5000](http://localhost:5000) <br/>
+- server will be open [http://localhost:5000](http://localhost:5000) 
 - cd.. (back out of directory)
 - npm start (start main application)
 
