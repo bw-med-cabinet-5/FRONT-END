@@ -12,10 +12,10 @@ const Search = () =>{
 
      
       return (
-    <div className="Strains">
+    <div className="main-cta">
           
           <form className="search">
-            
+            <h1>Search by Category </h1>
           <Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">
     Pick Search Type

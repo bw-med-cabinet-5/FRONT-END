@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom'
 import axios from 'axios';
 import Searchcards from './Searchcards';
 import styled from 'styled-components';
@@ -33,7 +34,8 @@ const SearchName = () =>{
     };
      return (
         
-        <div className="Strains">
+        <div className="main-cta">
+          <h2>Names</h2><Link to='/search'>back --></Link>
           
           <form onSubmit={handleSubmit}>
             <label>Search: </label>
@@ -42,7 +44,7 @@ const SearchName = () =>{
 
 
         </form> 
-      <div className="strains">
+      <div className="main-cta">
        { data.map(data => {
           return (
             <div className='strain-list' key={data.id}>

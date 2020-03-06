@@ -26,7 +26,7 @@ function App() {
       <PrivateRoute exact path='/profile' component={ProfileList}/>
       <PrivateRoute exact path='/search' component={Search}/>
       <Switch>
-      <PrivateRoute exact path='/ailments' component={SearchAilment}/>
+      <PrivateRoute exact path='/ailment' component={SearchAilment}/>
       <PrivateRoute exact path='/name' component={SearchName}/>
       <PrivateRoute exact path='/race' component={SearchRace}/>
       </Switch>

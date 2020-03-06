@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import {
+    Card, Button, CardTitle, CardText, 
+    CardSubtitle, CardBody,Col, Form, FormGroup, Label, Input
+  } from 'reactstrap';
+
 
 const Profile = ({ profile, deleteProfile, editProfile }) => {
     const [isEditing, setIsEditing] = useState(false);
@@ -24,28 +29,36 @@ const Profile = ({ profile, deleteProfile, editProfile }) => {
     }
 
     return (
-        <div className= 'profile-box-wrap'>
-        <div className='profileBox'>
-            <h3>{profile.name}</h3>
-            <p>Type: {profile.profile} </p>
-            <p>{profile.effects}</p>
-            <button className='delete' onClick={handleDeleteClick}>delete</button>
-            <button className='edit' onClick={handleEditClick}>edit</button>
-            </div>
+        <div>
+        <Card className= 'profile-box-wrap'>
+        <CardBody className='profileBox'>
+            <CardTitle>{profile.name}</CardTitle>
+            <CardSubtitle>Type: {profile.profile} </CardSubtitle>
+            <CardText>{profile.effects}</CardText>
+            <Button className='delete' onClick={handleDeleteClick}>delete</Button>
+            <Button className='edit' onClick={handleEditClick}>edit</Button>
+            </CardBody>
+
+        </Card>
+
 <div className='editBox'>
-            {isEditing && <form onSubmit={handleSubmit}>
-                <label htmlFor='name'>Name: </label>
-                <input type='text' name='name' value={profileToEdit.name} onChange={handleChange} />
-                
-                <label htmlFor='profile'>Type: </label>
-                <input type='text' name='profile' value={profileToEdit.profile} onChange={handleChange} />
-                
-                <label htmlFor='effects'>Effects: </label>
-                <input type='text' name='effects' value={profileToEdit.effects} onChange={handleChange} />
-                <button type='submit'>Submit</button>
-            </form>}
-            </div>
-        </div>
+{isEditing && <Form onSubmit={handleSubmit}>
+    <FormGroup >
+    <Label  htmlFor='name'>Name: </Label >
+    <Input  type='text' name='name' value={profileToEdit.name} onChange={handleChange} />
+    </FormGroup>
+    <FormGroup>
+    <Label htmlFor='profile'>Type: </Label>
+    <Input  type='text' name='profile' value={profileToEdit.profile} onChange={handleChange} />
+    </FormGroup>
+    <FormGroup>
+    <Label htmlFor='effects'>Effects: </Label>
+    <Input  type='text' name='effects' value={profileToEdit.effects} onChange={handleChange} />
+    <Button type='submit'>Submit</Button>
+    </FormGroup >
+</Form>}
+</div>
+</div>
     )
 }
 

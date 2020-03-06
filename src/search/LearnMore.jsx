@@ -13,7 +13,7 @@ import {
    const LearnMore = (props) => {
        console.log('props', props)
     return (
-      <div>
+      <div className='main-cta'>
         <Card>
           
           <CardBody>

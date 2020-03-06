@@ -11,7 +11,7 @@ const Searhcards = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className='main-cta'>
       <Btn color="success" onClick={toggle} style={{ marginBottom: '1rem' }}>{props.name}</Btn>
       <Collapse isOpen={isOpen}>
         <Card>

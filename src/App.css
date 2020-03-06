@@ -37,6 +37,15 @@
   }
 }
 
+.main-cta {
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.home-cta {
+height: 1040px;
+}
 
 .header-nav{
   display: flex;

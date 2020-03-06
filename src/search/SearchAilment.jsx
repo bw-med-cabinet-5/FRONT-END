@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Searchcards from './Searchcards';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 const NewSearch = styled.input`
 margin-top: .25rem;
@@ -34,8 +35,8 @@ const SearchAilment = () =>{
     };
      return (
         
-        <div className="Strains">
-          
+        <div className="main-cta">
+          <h2>Ailments</h2><Link to='/search'>back --></Link>
           <form onSubmit={handleSubmit}>
             <label>Search: </label>
             <NewSearch type='text' value={query} required onChange={handleInputChange} placeholder='search your ailment'/>
