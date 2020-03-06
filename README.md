@@ -33,6 +33,14 @@
 
 In the project directory, you can run:
 
+### Local Server delployment
+
+- cd cloned file directory
+- cd server
+- npm start
+- server will be open [http://localhost:5000] <br/>
+
+NOTE: This must be initiated to use CRUD functionality 
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
