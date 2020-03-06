@@ -12,7 +12,7 @@
 #### Fork or Clone
  If Clone
 - mkdir {name new folder directory}
-- cd {new new directory}
+- cd  new directory}
 - git clone {repo http path}
 
 ### `npm install`
